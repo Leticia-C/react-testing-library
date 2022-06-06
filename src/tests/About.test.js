@@ -7,7 +7,7 @@ import About from '../pages/About';
 describe('Teste o componente <About.js />', () => {
   test('Teste se a página contém as informações sobre a Pokédex', () => {
     render(<About />);
-    const pokeInfo = screen.getAllByAltText(/'pokédex'/i);
+    const pokeInfo = screen.getByText(/This application simulates a Pokédex/i);
 
     expect(pokeInfo).toBeInTheDocument();
   });
@@ -23,8 +23,8 @@ describe('Teste o componente <About.js />', () => {
   test('Teste se a página contém dois parágrafos com texto sobre a Pokédex', () => {
     render(<About />);
 
-    const pokedexP = screen.getAllByText(/'Pokémons'/i);
-    expect(pokedexP).toBeInTheDocument();
+    const pokedexP = screen.getAllByText(/Pokédex/i);
+    //  expect(pokedexP).toBeInTheDocument();
     expect(pokedexP).toHaveLength(2);
   });
 
