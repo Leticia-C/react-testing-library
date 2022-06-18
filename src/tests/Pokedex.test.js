@@ -17,7 +17,7 @@ const objetos = {
   148: false,
   151: false,
 };
-// peguei essa dica do objeto e de passar as props do Mathues durante a mentoria do Humberto
+// peguei essa dica do objeto e de passar as props do Matheus durante a mentoria do Humberto
 describe('Teste o componente <Pokedex.js />', () => {
   test('Teste se a página contém um heading h2 com o texto Encountered pokémons', () => {
     renderWithRouter(<Pokedex
@@ -67,5 +67,86 @@ describe('Teste o componente <Pokedex.js />', () => {
       expect(perPAge)
         .toHaveLength(1);
       /// Dica do Andre na mentoria
+    });
+  test('Teste se a Pokédex tem os botões de filtro:;',
+    () => {
+      renderWithRouter(<Pokedex
+        pokemons={ pokemons }
+        isPokemonFavoriteById={ objetos }
+      />);
+      const nextPokemon = screen.getByRole('button', { name: /Próximo pokémon/i });
+      expect(nextPokemon).toBeInTheDocument();
+
+      const buttonElectric = screen.getByRole('button',
+        { name: /Electric/i });
+      expect(buttonElectric).toBeInTheDocument();
+      userEvent.click(buttonElectric);
+      const pikachu = screen.getByAltText(/Pikachu/i);
+      expect(pikachu).toBeInTheDocument();
+
+      const buttonFire = screen.getByRole('button',
+        { name: /Fire/i });
+      userEvent.click(buttonFire);
+      const charmander = screen.getByAltText(/Charmander/i);
+      expect(charmander).toBeInTheDocument();
+      userEvent.click(nextPokemon);
+      const rapidash = screen.getByAltText(/Rapidash/i);
+      expect(rapidash).toBeInTheDocument();
+
+      const buttonBug = screen.getByRole('button',
+        { name: /Bug/i });
+      userEvent.click(buttonBug);
+      const caterpie = screen.getByAltText(/Caterpie/i);
+      expect(caterpie).toBeInTheDocument();
+
+      const buttonPoison = screen.getByRole('button',
+        { name: /Poison/i });
+      userEvent.click(buttonPoison);
+      const ekans = screen.getByAltText(/Ekans/i);
+      expect(ekans).toBeInTheDocument();
+
+      const buttonNormal = screen.getByRole('button',
+        { name: /Normal/i });
+      userEvent.click(buttonNormal);
+      const snorlax = screen.getByAltText(/Snorlax/i);
+      expect(snorlax).toBeInTheDocument();
+
+      const buttonDragon = screen.getByRole('button',
+        { name: /Dragon/i });
+      userEvent.click(buttonDragon);
+      const dragonair = screen.getByAltText(/Dragonair/i);
+      expect(dragonair).toBeInTheDocument();
+
+      const buttonPsychic = screen.getByRole('button',
+        { name: /Psychic/i });
+      userEvent.click(buttonPsychic);
+      const alakazam = screen.getByAltText(/Alakazam/i);
+      expect(alakazam).toBeInTheDocument();
+      userEvent.click(nextPokemon);
+      const mew = screen.getByAltText(/Mew/i);
+      expect(mew).toBeInTheDocument();
+      const buttonAll = screen.getByRole('button',
+        { name: /All/i });
+
+      expect(buttonAll).toBeInTheDocument();
+      expect(buttonPsychic).toBeInTheDocument();
+      expect(buttonFire).toBeInTheDocument();
+      expect(buttonBug).toBeInTheDocument();
+      expect(buttonPoison).toBeInTheDocument();
+      expect(buttonNormal).toBeInTheDocument();
+      expect(buttonDragon).toBeInTheDocument();
+    });
+  test('Teste se a Pokédex contém um botão para resetar o filtro:;',
+    () => {
+      renderWithRouter(<Pokedex
+        pokemons={ pokemons }
+        isPokemonFavoriteById={ objetos }
+      />);
+      const AllPokemon = pokemons.some((pikachu) => pikachu.name === 'Pikachu');
+      expect(AllPokemon).toBe(true);
+      const buttonAll = screen.getByRole('button',
+        { name: /All/i });
+
+      expect(buttonAll).toBeInTheDocument();
     });
 });
