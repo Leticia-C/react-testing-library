@@ -41,6 +41,25 @@ describe('Teste o componente <Pokedex.js />', () => {
         expect(screen.getByTestId('next-pokemon', { name: pokemon }))
           .toBeInTheDocument();
         userEvent.click(pokedexbutton);
+
+        const buttonFire = screen.getByRole('button',
+          { name: /Fire/i });
+        userEvent.click(buttonFire);
+        const charmander = screen.getByAltText(/Charmander/i);
+        expect(charmander).toBeInTheDocument();
+        userEvent.click(nextPokemon);
+        const rapidash = screen.getByAltText(/Rapidash/i);
+        expect(rapidash).toBeInTheDocument();
+
+        const buttonPsychic = screen.getByRole('button',
+          { name: /Psychic/i });
+        userEvent.click(buttonPsychic);
+        const alakazam = screen.getByAltText(/Alakazam/i);
+        expect(alakazam).toBeInTheDocument();
+        userEvent.click(nextPokemon);
+        const mew = screen.getByAltText(/Mew/i);
+        expect(mew).toBeInTheDocument();
+
         // Dica do Saturnino, usar um for e a lógica DENTRO DELE
       });
       expect(pokedexbutton).toBeInTheDocument();
