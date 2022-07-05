@@ -1,40 +1,44 @@
 import React from 'react';
-import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Pokemon } from '../components';
+import { screen } from '@testing-library/react';
 import renderWithRouter from '../renderWithRouter';
+import App from '../App';
+import { FavoritePokemons } from '../pages';
 import pokemons from '../data';
 
-// const { averageWeight, id, image, name, type } = pokemons;
-// const { measurementUnit, value } = averageWeight;
+describe('Teste o componente <Pokemon.js />', () => {
+  it('Teste se é renderizado um card com as informações de determinado pokémon', () => {
+    renderWithRouter(<App />);
+    const name = screen.getByTestId('pokemon-name');
+    expect(name).toBeInTheDocument();
+    const pikachu = screen.getByAltText(/Pikachu/i);
+    expect(pikachu).toBeInTheDocument();
 
-test('Teste se é renderizado um card com as informações de determinado pokémon:',
-  () => {
-    renderWithRouter(<Pokemon
-      pokemons={ pokemons }
-    />);
-    const buttonDragon = screen.getByRole('button',
-      { name: /Dragon/i });
-    userEvent.click(buttonDragon);
-    const dragonair = screen.getByAltText(/Dragonair/i);
-    const summary = screen.getByText(/They say that if it emits an aura from its whole/i);
-    expect(dragonair).toBeInTheDocument();
-    expect(summary).toBeInTheDocument();
+    const type = screen.getByTestId('pokemon-type');
+    expect(type).toBeInTheDocument();
+    expect(type).toHaveTextContent(/Electric/);
+
+    const weight = screen.getByTestId('pokemon-weight');
+    expect(weight).toBeInTheDocument();
+    expect(weight).toHaveTextContent('6.0 kg');
+
+    const nameImg = screen.getByRole('img', { name: /Pikachu/i });
+    expect(nameImg).toBeInTheDocument();
+    expect(nameImg.src).toBe('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png');
   });
+  it('Teste se o card do pokémon indicado na Pokédex contém um link de navegação', () => {
+    const { history } = renderWithRouter(<App />);
+    const details = screen.getByRole('link', { name: /more details/i });
 
-/*
-Teste se é renderizado um card com as informações de determinado pokémon:
-O nome correto do pokémon deve ser mostrado na tela;
+    userEvent.click(details);
 
-O tipo correto do pokémon deve ser mostrado na tela;
+    expect(history.location.pathname).toBe('/pokemons/25');
+  });
+  test('Teste se existe um ícone de estrela nos pokémons favoritados', () => {
+    renderWithRouter(<FavoritePokemons pokemons={ pokemons } />);
+    const favorite = screen.queryByRole('img',
+      { name: /Pikachu is marked as favorite/i });
 
-O peso médio do pokémon deve ser exibido com um texto no formato Average weight: <value> <measurementUnit>; onde <value> e <measurementUnit> são, respectivamente, o peso médio do pokémon e sua unidade de medida;
-
-A imagem do pokémon deve ser exibida. Ela deve conter um atributo src com a URL da imagem e um atributo alt com o texto <name> sprite, onde <name> é o nome do pokémon.
-O nome correto do pokémon deve ser mostrado na tela;
-
-O tipo correto do pokémon deve ser mostrado na tela;
-
-O peso médio do pokémon deve ser exibido com um texto no formato Average weight: <value> <measurementUnit>; onde <value> e <measurementUnit> são, respectivamente, o peso médio do pokémon e sua unidade de medida;
-
-A imagem do pokémon deve ser exibida. Ela deve conter um atributo src com a URL da imagem e um atributo alt com o texto <name> sprite, onde <name> é o nome do pokémon. */
+    expect(favorite).toHaveAttribute('src', '/star-icon.svg');
+  });
+});
