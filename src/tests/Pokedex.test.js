@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Pokedex from '../pages/Pokedex';
@@ -6,7 +6,7 @@ import renderWithRouter from '../renderWithRouter';
 import pokemons from '../data';
 import App from '../App';
 
-/* const isPokemonFavoriteById = {
+const isPokemonFavoriteById = {
   25: true,
 };
 // peguei essa dica do objeto e de passar as props do Matheus durante a mentoria do Humberto
@@ -68,58 +68,74 @@ describe('Teste o componente <Pokedex.js />', () => {
         pokemons={ pokemons }
         isPokemonFavoriteById={ false }
       />);
+      const AllButtons = 7;
+      const getTypeWithId = screen.getAllByTestId('pokemon-type-button');
+      getTypeWithId.map((type) => expect(type).toBeInTheDocument());
+      expect(getTypeWithId).toHaveLength(AllButtons);
+      const buttonAll = screen.getByRole('button',
+        { name: /All/i });
+      expect(buttonAll).toBeInTheDocument();
       const nextPokemon = screen.getByRole('button', { name: /Próximo pokémon/i });
       expect(nextPokemon).toBeInTheDocument();
       const buttonElectric = screen.getByRole('button',
         { name: /Electric/i });
       expect(buttonElectric).toBeInTheDocument();
       userEvent.click(buttonElectric);
-      const pikachu = screen.getByAltText(/Pikachu/i);
+      const pikachu = screen.getByText(/Pikachu/i);
       expect(pikachu).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonFire = screen.getByRole('button',
         { name: /Fire/i });
       userEvent.click(buttonFire);
-      const charmander = screen.getByAltText(/Charmander/i);
+      const charmander = screen.getByText(/Charmander/i);
       expect(charmander).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
       userEvent.click(nextPokemon);
-      const rapidash = screen.getByAltText(/Rapidash/i);
+      const rapidash = screen.getByText(/Rapidash/i);
       expect(rapidash).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonBug = screen.getByRole('button',
         { name: /Bug/i });
       userEvent.click(buttonBug);
-      const caterpie = screen.getByAltText(/Caterpie/i);
+      const caterpie = screen.getByText(/Caterpie/i);
       expect(caterpie).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonPoison = screen.getByRole('button',
         { name: /Poison/i });
       userEvent.click(buttonPoison);
-      const ekans = screen.getByAltText(/Ekans/i);
+      const ekans = screen.getByText(/Ekans/i);
       expect(ekans).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonNormal = screen.getByRole('button',
         { name: /Normal/i });
       userEvent.click(buttonNormal);
-      const snorlax = screen.getByAltText(/Snorlax/i);
+      const snorlax = screen.getByText(/Snorlax/i);
       expect(snorlax).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonDragon = screen.getByRole('button',
         { name: /Dragon/i });
       userEvent.click(buttonDragon);
-      const dragonair = screen.getByAltText(/Dragonair/i);
+      const dragonair = screen.getByText(/Dragonair/i);
       expect(dragonair).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
 
       const buttonPsychic = screen.getByRole('button',
         { name: /Psychic/i });
       userEvent.click(buttonPsychic);
-      const alakazam = screen.getByAltText(/Alakazam/i);
+      const alakazam = screen.getByText(/Alakazam/i);
       expect(alakazam).toBeInTheDocument();
+      expect(buttonAll).toBeInTheDocument();
       userEvent.click(nextPokemon);
-      const mew = screen.getByAltText(/Mew/i);
+      const mew = screen.getByText(/Mew/i);
       expect(mew).toBeInTheDocument();
-      const buttonAll = screen.getByRole('button',
-        { name: /All/i });
+      expect(buttonAll).toBeInTheDocument();
+      userEvent.click(buttonAll);
+      expect(pikachu).toBeInTheDocument();
 
       expect(buttonAll).toBeInTheDocument();
       expect(buttonPsychic).toBeInTheDocument();
@@ -133,17 +149,19 @@ describe('Teste o componente <Pokedex.js />', () => {
     () => {
       renderWithRouter(<Pokedex
         pokemons={ pokemons }
-        isPokemonFavoriteById={ false }
+        isPokemonFavoriteById={ isPokemonFavoriteById }
       />);
-      const AllPokemon = pokemons.some((pikachu) => pikachu.name === 'Pikachu');
-      expect(AllPokemon).toBe(true);
+      const buttonNormal = screen.getByRole('button',
+        { name: /Normal/i });
+      userEvent.click(buttonNormal);
+      const snorlax = screen.getByText(/Snorlax/i);
+      expect(snorlax).toBeInTheDocument();
       const buttonAll = screen.getByRole('button',
         { name: /All/i });
       expect(buttonAll).toBeInTheDocument();
       userEvent.click(buttonAll);
-      const firstPokemon = screen.getByText('Pikachu');
-      expect(firstPokemon).toBeInTheDocument();
+      const pikachu = screen.getByText(/Pikachu/i);
+      expect(pikachu).toBeInTheDocument();
       expect(buttonAll).toBeInTheDocument();
     });
 });
- */
