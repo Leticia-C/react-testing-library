@@ -2277,3 +2277,1617 @@ There are no accessible roles. But there might be some inaccessible roles. If yo
     at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
+12:58:16 (44234) INFO ConfigReader Using stryker.conf.json
+12:58:16 (44234) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:58:16 (44234) DEBUG ConfigReader Loading config /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json
+12:58:16 (44234) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json"
+}
+12:58:16 (44234) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:58:16 (44234) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:58:16 (44234) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:58:16 (44234) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:58:16 (44234) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:58:16 (44234) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:58:16 (44234) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+12:58:16 (44234) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+12:58:16 (44234) DEBUG InputFileResolver All input files: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.babelrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.gitignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.npmrc",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/README.md",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package-lock.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/favicon.ico",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/index.html",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo192.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo512.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/manifest.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/robots.txt",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/star-icon.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Button.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/button.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/data.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/logo.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/about.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/favorite-pokemons.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/not-found.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokedex.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokemon-details.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/renderWithRouter.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/routes/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/setupTests.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/types/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.log",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testefalhando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testepassando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/trybe.yml"
+]
+12:58:16 (44234) DEBUG InputFileResolver Files to mutate: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js"
+]
+12:58:16 (44234) DEBUG TemporaryDirectory Using temp directory "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp"
+12:58:16 (44234) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:58:16 (44234) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:58:16 (44234) DEBUG Sandbox Creating a sandbox for files in /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327
+12:58:16 (44234) DEBUG Sandbox Creating test runner 0
+12:58:16 (44234) DEBUG ChildProcessProxy Starting /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 44259
+12:58:17 (44234) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+12:58:17 (44259) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327
+12:58:17 (44259) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:58:17 (44259) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:58:17 (44259) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:58:17 (44259) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:58:17 (44259) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:58:17 (44259) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:58:17 (44259) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+12:58:17 (44259) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+12:58:17 (44259) DEBUG JestTestRunner Project root is /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327
+12:58:17 (44259) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+12:58:23 (44234) DEBUG ChildProcessProxy Disposing of worker process 44259
+12:58:23 (44234) DEBUG ChildProcessProxy Kill 44259
+12:58:23 (44234) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Teste o componente <Pokedex.js /> Teste se a Pokédex tem os botões de filtro:;
+		TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Próximo pokémon/i`
+
+There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+[36m<body />[39m
+    at Object.getElementError (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByRole (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327/src/tests/Pokedex.test.js:68:34)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+	Teste o componente <<PokemonDetails.js /> Teste se as informações detalhadas do pokémon selecionado são mostradas
+		TypeError: Cannot read property 'params' of undefined
+    at PokemonDetails.render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327/src/pages/PokemonDetails.js:23:9)
+    at finishClassComponent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+    at updateClassComponent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+    at beginWork (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/dist/pure.js:101:25
+    at batchedUpdates$1 (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/dist/pure.js:97:26)
+    at renderWithRouter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327/src/renderWithRouter.js:9:8)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9855327/src/tests/PokemonDetails.test.js:11:5)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+12:58:23 (44234) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
+12:58:35 (44398) INFO ConfigReader Using stryker.conf.json
+12:58:35 (44398) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:58:35 (44398) DEBUG ConfigReader Loading config /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json
+12:58:35 (44398) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json"
+}
+12:58:35 (44398) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:58:35 (44398) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:58:35 (44398) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:58:35 (44398) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:58:35 (44398) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:58:35 (44398) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:58:35 (44398) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+12:58:35 (44398) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+12:58:35 (44398) DEBUG InputFileResolver All input files: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.babelrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.gitignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.npmrc",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/README.md",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package-lock.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/favicon.ico",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/index.html",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo192.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo512.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/manifest.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/robots.txt",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/star-icon.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Button.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/button.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/data.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/logo.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/about.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/favorite-pokemons.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/not-found.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokedex.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokemon-details.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/renderWithRouter.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/routes/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/setupTests.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/types/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.log",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testefalhando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testepassando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/trybe.yml"
+]
+12:58:35 (44398) DEBUG InputFileResolver Files to mutate: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js"
+]
+12:58:35 (44398) DEBUG TemporaryDirectory Using temp directory "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp"
+12:58:35 (44398) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:58:35 (44398) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:58:35 (44398) DEBUG Sandbox Creating a sandbox for files in /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015
+12:58:35 (44398) DEBUG Sandbox Creating test runner 0
+12:58:35 (44398) DEBUG ChildProcessProxy Starting /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 44423
+12:58:35 (44423) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015
+12:58:35 (44423) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:58:35 (44423) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:58:35 (44423) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:58:35 (44423) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:58:35 (44423) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:58:35 (44423) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:58:35 (44423) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+12:58:35 (44423) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+12:58:35 (44423) DEBUG JestTestRunner Project root is /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015
+12:58:35 (44398) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+12:58:35 (44423) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+12:58:42 (44398) DEBUG ChildProcessProxy Disposing of worker process 44423
+12:58:42 (44398) DEBUG ChildProcessProxy Kill 44423
+12:58:42 (44398) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Teste o componente <Pokedex.js /> Teste se a Pokédex tem os botões de filtro:;
+		TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Próximo pokémon/i`
+
+There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+[36m<body />[39m
+    at Object.getElementError (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByRole (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015/src/tests/Pokedex.test.js:68:34)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+	Teste o componente <<PokemonDetails.js /> Teste se as informações detalhadas do pokémon selecionado são mostradas
+		TypeError: Cannot read property 'params' of undefined
+    at PokemonDetails.render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015/src/pages/PokemonDetails.js:23:9)
+    at finishClassComponent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:17160:31)
+    at updateClassComponent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:17110:24)
+    at beginWork (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:188:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:237:16)
+    at invokeGuardedCallback (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:292:31)
+    at beginWork$1 (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
+    at performUnitOfWork (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
+    at workLoopSync (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
+    at updateContainer (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24758:7
+    at unbatchedUpdates (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
+    at Object.render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/dist/pure.js:101:25
+    at batchedUpdates$1 (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
+    at act (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
+    at render (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/dist/pure.js:97:26)
+    at renderWithRouter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015/src/renderWithRouter.js:9:8)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9725015/src/tests/PokemonDetails.test.js:11:5)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+12:58:42 (44398) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
+12:59:03 (44562) INFO ConfigReader Using stryker.conf.json
+12:59:03 (44562) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:59:03 (44562) DEBUG ConfigReader Loading config /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json
+12:59:03 (44562) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json"
+}
+12:59:03 (44562) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:59:03 (44562) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:59:03 (44562) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:59:03 (44562) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:59:03 (44562) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:59:03 (44562) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:59:03 (44562) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+12:59:03 (44562) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+12:59:03 (44562) DEBUG InputFileResolver All input files: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.babelrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.gitignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.npmrc",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/README.md",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package-lock.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/favicon.ico",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/index.html",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo192.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo512.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/manifest.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/robots.txt",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/star-icon.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Button.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/button.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/data.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/logo.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/about.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/favorite-pokemons.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/not-found.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokedex.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokemon-details.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/renderWithRouter.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/routes/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/setupTests.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/types/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.log",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testefalhando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testepassando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/trybe.yml"
+]
+12:59:03 (44562) DEBUG InputFileResolver Files to mutate: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js"
+]
+12:59:03 (44562) DEBUG TemporaryDirectory Using temp directory "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp"
+12:59:03 (44562) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:59:03 (44562) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:59:03 (44562) DEBUG Sandbox Creating a sandbox for files in /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962
+12:59:03 (44562) DEBUG Sandbox Creating test runner 0
+12:59:03 (44562) DEBUG ChildProcessProxy Starting /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 44587
+12:59:03 (44587) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962
+12:59:03 (44587) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:59:03 (44587) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:59:03 (44587) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:59:03 (44587) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:59:03 (44587) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:59:03 (44587) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:59:03 (44587) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+12:59:03 (44587) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+12:59:03 (44587) DEBUG JestTestRunner Project root is /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962
+12:59:03 (44562) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+12:59:03 (44587) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+12:59:10 (44562) DEBUG ChildProcessProxy Disposing of worker process 44587
+12:59:10 (44562) DEBUG ChildProcessProxy Kill 44587
+12:59:10 (44562) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Teste o componente <Pokedex.js /> Teste se a Pokédex tem os botões de filtro:;
+		TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Próximo pokémon/i`
+
+There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+[36m<body />[39m
+    at Object.getElementError (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByRole (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962/src/tests/Pokedex.test.js:68:34)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+	Teste o componente <<PokemonDetails.js /> Teste se as informações detalhadas do pokémon selecionado são mostradas
+		TestingLibraryElementError: Unable to find an element with the text: /Pikachu Details/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App"[39m
+    [36m>[39m
+      [36m<h1>[39m
+        [0mPokédex[0m
+      [36m</h1>[39m
+      [36m<nav>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/"[39m
+        [36m>[39m
+          [0mHome[0m
+        [36m</a>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/about"[39m
+        [36m>[39m
+          [0mAbout[0m
+        [36m</a>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/favorites"[39m
+        [36m>[39m
+          [0mFavorite Pokémons[0m
+        [36m</a>[39m
+      [36m</nav>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"pokedex"[39m
+      [36m>[39m
+        [36m<h2>[39m
+          [0mEncountered pokémons[0m
+        [36m</h2>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"pokemon"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"pokemon-overview"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-name"[39m
+            [36m>[39m
+              [0mPikachu[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-type"[39m
+            [36m>[39m
+              [0mElectric[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-weight"[39m
+            [36m>[39m
+              [0mAverage weight: [0m
+              [0m6.0[0m
+              [0m [0m
+              [0mkg[0m
+            [36m</p>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/pokemons/25"[39m
+            [36m>[39m
+              [0mMore details[0m
+            [36m</a>[39m
+          [36m</div>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"Pikachu sprite"[39m
+            [33msrc[39m=[32m"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"pokedex-buttons-panel"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m""[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mAll[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mElectric[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mFire[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mBug[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mPoison[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mPsychic[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mNormal[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mDragon[0m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"button-text pokedex-button"[39m
+          [33mdata-testid[39m=[32m"next-pokemon"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [0mPróximo pokémon[0m
+        [36m</button>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+    at Object.getElementError (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByText (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox4693962/src/tests/PokemonDetails.test.js:13:28)
+    at Promise.then.completed (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+12:59:10 (44562) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
+12:59:53 (44732) INFO ConfigReader Using stryker.conf.json
+12:59:53 (44732) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+12:59:53 (44732) DEBUG ConfigReader Loading config /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json
+12:59:53 (44732) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json"
+}
+12:59:53 (44732) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:59:53 (44732) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:59:53 (44732) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:59:53 (44732) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:59:53 (44732) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:59:53 (44732) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:59:53 (44732) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+12:59:53 (44732) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+12:59:53 (44732) DEBUG InputFileResolver All input files: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.babelrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.gitignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.npmrc",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/README.md",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package-lock.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/favicon.ico",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/index.html",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo192.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo512.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/manifest.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/robots.txt",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/star-icon.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Button.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/button.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/data.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/logo.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/about.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/favorite-pokemons.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/not-found.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokedex.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokemon-details.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/renderWithRouter.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/routes/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/setupTests.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/types/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.log",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testefalhando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testepassando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/trybe.yml"
+]
+12:59:53 (44732) DEBUG InputFileResolver Files to mutate: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js"
+]
+12:59:53 (44732) DEBUG TemporaryDirectory Using temp directory "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp"
+12:59:53 (44732) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+12:59:53 (44732) INFO InitialTestExecutor Starting initial test run. This may take a while.
+12:59:53 (44732) DEBUG Sandbox Creating a sandbox for files in /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox90566
+12:59:53 (44732) DEBUG Sandbox Creating test runner 0
+12:59:53 (44732) DEBUG ChildProcessProxy Starting /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 44757
+12:59:53 (44757) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox90566
+12:59:53 (44757) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+12:59:53 (44757) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+12:59:53 (44757) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+12:59:53 (44757) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+12:59:54 (44757) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+12:59:54 (44757) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+12:59:54 (44757) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox90566"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+12:59:54 (44757) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+12:59:54 (44757) DEBUG JestTestRunner Project root is /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox90566
+12:59:54 (44732) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+12:59:54 (44757) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox90566","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+13:00:00 (44732) DEBUG ChildProcessProxy Disposing of worker process 44757
+13:00:00 (44732) DEBUG ChildProcessProxy Kill 44757
+13:00:00 (44732) ERROR InitialTestExecutor One or more tests resulted in an error:
+	  ● Teste o componente <Pokedex.js /> › Teste se a Pokédex tem os botões de filtro:;
+
+    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name `/Próximo pokémon/i`
+
+    There are no accessible roles. But there might be some inaccessible roles. If you wish to access them, then set the `hidden` option to `true`. Learn more about this here: https://testing-library.com/docs/dom-testing-library/api-queries#byrole
+
+    [36m<body />[39m
+
+      66 |       </MemoryRouter>;
+      67 |
+    > 68 |       const nextPokemon = screen.getByRole('button', { name: /Próximo pokémon/i });
+         |                                  ^
+      69 |       expect(nextPokemon).toBeInTheDocument();
+      70 |       const buttonElectric = screen.getByRole('button',
+      71 |         { name: /Electric/i });
+
+      at Object.getElementError (../../node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at ../../node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at ../../node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByRole (../../node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/tests/Pokedex.test.js:68:34)
+
+	  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (../../node_modules/@jest/core/build/TestScheduler.js:175:18)
+      at ../../node_modules/@jest/core/build/TestScheduler.js:316:17
+      at ../../node_modules/emittery/index.js:260:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (../../node_modules/emittery/index.js:258:23)
+
+13:00:00 (44732) ERROR StrykerCli an error occurred Error: Something went wrong in the initial test run
+    at InitialTestExecutor.validateResult (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:86:15)
+    at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
+13:01:24 (44962) INFO ConfigReader Using stryker.conf.json
+13:01:24 (44962) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+13:01:24 (44962) DEBUG ConfigReader Loading config /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json
+13:01:24 (44962) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json"
+}
+13:01:24 (44962) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+13:01:24 (44962) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+13:01:24 (44962) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+13:01:24 (44962) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+13:01:24 (44962) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+13:01:24 (44962) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+13:01:24 (44962) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+13:01:24 (44962) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+13:01:24 (44962) DEBUG InputFileResolver All input files: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.babelrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.eslintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/CODEOWNERS",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.github/workflows/main.yml",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.gitignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.npmrc",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintignore",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stylelintrc.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.trybe/requirements.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/README.md",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package-lock.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/package.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/favicon.ico",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/index.html",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo192.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/logo512.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/manifest.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/robots.txt",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/public/star-icon.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Button.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/button.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/pokemon.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/data.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/logo.svg",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/about.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/favorite-pokemons.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/not-found.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokedex.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/pokemon-details.css",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/renderWithRouter.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/routes/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/serviceWorker.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/services/pokedexService.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/setupTests.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/About.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/App.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/types/index.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker.log",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/About.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/App.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testefalhando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/testepassando.png",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/trybe.yml"
+]
+13:01:24 (44962) DEBUG InputFileResolver Files to mutate: [
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/App.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/FavoriteInput.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/Pokemon.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonButtonsPanel.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/components/PokemonData.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/About.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/FavoritePokemons.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/NotFound.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/Pokedex.js",
+  "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/src/pages/PokemonDetails.js"
+]
+13:01:24 (44962) DEBUG TemporaryDirectory Using temp directory "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp"
+13:01:24 (44962) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+13:01:24 (44962) INFO InitialTestExecutor Starting initial test run. This may take a while.
+13:01:24 (44962) DEBUG Sandbox Creating a sandbox for files in /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9729409
+13:01:24 (44962) DEBUG Sandbox Creating test runner 0
+13:01:24 (44962) DEBUG ChildProcessProxy Starting /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 44989
+13:01:24 (44989) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9729409
+13:01:24 (44989) DEBUG PluginLoader Loading @stryker-mutator/* from /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator
+13:01:24 (44989) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+13:01:24 (44989) DEBUG PluginLoader Loading plugin "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+13:01:24 (44989) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+13:01:25 (44989) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+13:01:25 (44989) DEBUG PluginLoader Loading plugins /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+13:01:25 (44989) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9729409"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+13:01:25 (44989) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+13:01:25 (44989) DEBUG JestTestRunner Project root is /home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9729409
+13:01:25 (44962) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+13:01:25 (44989) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/.stryker-tmp/sandbox9729409","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+13:01:31 (44962) DEBUG ChildProcessProxy Disposing of worker process 44989
+13:01:31 (44962) DEBUG ChildProcessProxy Kill 44989
+13:01:31 (44962) ERROR InitialTestExecutor One or more tests resulted in an error:
+	  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (../../node_modules/@jest/core/build/TestScheduler.js:175:18)
+      at ../../node_modules/@jest/core/build/TestScheduler.js:316:17
+      at ../../node_modules/emittery/index.js:260:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (../../node_modules/emittery/index.js:258:23)
+
+	  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (../../node_modules/@jest/core/build/TestScheduler.js:175:18)
+      at ../../node_modules/@jest/core/build/TestScheduler.js:316:17
+      at ../../node_modules/emittery/index.js:260:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (../../node_modules/emittery/index.js:258:23)
+
+13:01:31 (44962) ERROR StrykerCli an error occurred Error: Something went wrong in the initial test run
+    at InitialTestExecutor.validateResult (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:86:15)
+    at InitialTestExecutor.run (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Stryker.runMutationTest (/home/leticia/TrybeProjetos/sd-021-b-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
